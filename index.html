@@ -5,42 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ManuDev</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/stylesd.css">
 </head>
 <body>
-    <div class="container">
-
+    <div id="uno" class="container-uno">
         <nav class="nav">
-            <a href="#">Inicio</a>
-            <a href="#">About</a>
-            <a href="#">Promociones</a>
+            <h1 id="home" class="name">ManuDev</h1>
+            <div class="a">
+                <a class="nav-a" href="#uno">Home</a>
+                <a class="nav-a" href="#dos">Projects</a>
+                <a class="nav-a" href="#tres">Contact</a>
+            </div>
         </nav>
+        <aside>
+            <a href="#uno">
+                <img class="fill" src="./img/house-solid.svg" alt="home">
+            </a>
+        </aside>
         <header>
-            <h1 class="name">ManuDev</h1>
-            <p class="description">Soy un desarrollador web junior al que le encanta aprender cada día para estar siempre actualizado con las ultimas tecnologías...</p>
+            <!-- <h3>Construyendo el futuro de la web.</h3> -->
+            <h4>Hola, soy Manuel</h4>
+            <p class="description">Desarrollador web.</p>
         </header>
-        <main>
-            <h2>Projects</h2>
+    </div>
+    <!-- <div class="container-dos"> -->
+        <main id="dos" class="container-dos">
             <div class="projects">
+                <h2>Projects</h2>
                 <div class="projectu project-one">
-                    <img src="./img/desktop-preview.jpg" alt="">
-                    <a href="./projects/social-proof-section-master/index.html" target="_blank" rel="noopener noreferrer">Social</a>
+                    <a href="./projects/social-proof-section-master/index.html" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/desktop-preview.jpg" alt="">
+                        <a class="b" href="./projects/social-proof-section-master/index.html" target="_blank" rel="noopener noreferrer">Social</a>
+                    </a>
                 </div>
                 <div class="projectu project-two">
-                    <img src="./img/desktop-previewp2.jpg" alt="project-two">
-                    <a href="./projects/product-preview-card-component-main/index.html" target="_blank" rel="noopener noreferrer">Perfume card</a>
+                    <a href="./projects/product-preview-card-component-main/index.html" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/desktop-previewp2.jpg" alt="project-two">
+                        <a class="b" href="./projects/product-preview-card-component-main/index.html" target="_blank" rel="noopener noreferrer">Perfume card</a>
+                    </a>
                 </div>
-                <div class="projectu project-two">
-                    <img src="./img/desktop-previewp3.jpg" alt="project-two">
-                    <a href="./projects/qr-code-component-main/index.html" target="_blank" rel="noopener noreferrer">QR Code Component</a>
+                <div class="projectu project-three">
+                    <a href="./projects/qr-code-component-main/index.html" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/desktop-previewp3.jpg" alt="project-two">
+                        <a class="b" href="./projects/qr-code-component-main/index.html" target="_blank" rel="noopener noreferrer">QR Code Component</a>
+                    </a>
                 </div>
             </div>
         </main>
         <footer>
-            <div class="footer">
-                <span>Este es uno de mis primeros proyectos y me llena de mucha emoción ❤</span>
+            <div id="tres" class="container-tres">
+            </p><span class="red">Gracias por ver mis proyectos<br>❤</span>
+                <p>
+                    
             </div>
         </footer>
-    </div>
+    <!-- </div> -->
+   
 </body>
 </html>
