@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.tarjeta {
+    width: 325px;
+    height: 545px;
+    padding: 24px;
+    border-radius: 16px;
+    /* border: 3px solid; */
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(0, 0%, 100%);
+}
+
+.tarjeta__product {
+    width: 277px;
+    height: 277px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-image: url("../images/image-equilibrium.jpg");
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    transition-property: background-size;
+    transition-duration: 1100ms;
+    /* transition: background-size 8s; */
+}
+
+.tarjeta__product:hover {
+    background-size: 120%;
+}
+
+.tarjeta__product--hover {
+    width: inherit;
+    height: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url("../images/icon-view.svg");
+    background-size: 0%;
+    transition-property: background-color, background-image, background-size;
+    transition-duration: 1000ms, 1000ms, 200ms;
+}
+
+.tarjeta__product--hover:hover {
+    background-color: hsla(178, 100%, 50%, 0.481);
+    background-image: url("../images/icon-view.svg");
+    background-size: 17.3%;
+    
+}
+
+.tarjeta__inf__name--hover {
+    color: inherit;
+    font-size: 22px;
+    margin: 26px 0 18px;
+    transition-property: color;
+    transition-duration: 150ms;
+    font-weight: 600;
+}
+
+.tarjeta__inf__name--hover:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.tarjeta__inf__des {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    font-weight: 300;
+}
+
+.tarjeta__inf__price-and-time {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 14px;
+    font-weight: 400;
+    /* height: 40px; */
+    /* background-color: red; */
+}
+
+.tarjeta__inf__price-and-time__time {
+    display: flex;
+    align-content: center;
+    
+}
+
+.tarjeta__inf__price-and-time__price {
+    display: flex;
+    align-content: center;
+}
+.tarjeta__inf__price-and-time__price p {
+    color: hsl(178, 100%, 50%);
+}
+
+
+.line {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.tarjeta__user {
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    border-top: 1px solid hsl(215, 32%, 27%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tarjeta__user img {
+    width: 35px;
+    height: 35px;
+    margin-right: 16px;
+}
+
+.tarjeta__user__name {
+    color: hsl(215, 51%, 70%);
+}
+
+
+.tarjeta__user__name--hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.tarjeta__user__name--hover:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+.footer {
+    width: 500px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+.footer__attribution { 
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+    .footer__attribution a { color: hsl(228, 100%, 72%);
+    }

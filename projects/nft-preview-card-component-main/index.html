@@ -2,32 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
   
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- <div class="max"> -->
+  <main class="tarjeta">
+    <section class="tarjeta__product">      
+        <!-- <img class="tarjeta__product__image" src="./images/image-equilibrium.jpg" alt=""> -->
+        <div class="tarjeta__product--hover">
+          <picture class="tarjeta__product__image--hover">
+            <!-- <img class="tarjeta__product__image__view--hover" src="./images/icon-view.svg" alt="view"> -->
+          </picture>
+        </div>
+      </section>
+      <section class="tarjeta__inf">
+        <h1 class="tarjeta__inf__name--hover">
+          Equilibrium #3429
+        </h1>
+        <p class="tarjeta__inf__des">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="tarjeta__inf__price-and-time">
+          <div class="tarjeta__inf__price-and-time__price">
+            <img class="line" src="./images/icon-ethereum.svg" alt="icon-ethereum">
+            <p>
+              0.041 ETH
+            </p>
+          </div>
+          <div class="tarjeta__inf__price-and-time__time">
+            <img class="line" src="./images/icon-clock.svg" alt="icon-clock">
+            <p>
+              3 days left
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- <hr> -->
+      <section class="tarjeta__user">
+        <img src="./images/image-avatar.png" alt="user">
+        <p class="tarjeta__user__name">
+          Creation of 
+          <span class="tarjeta__user__name--hover">Jules Wyvern</span>
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Manuel Noriega</a>.
+      </div>
+    </footer>
+  <!-- </div> -->
 </body>
 </html>
