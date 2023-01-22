@@ -14,7 +14,7 @@ body {
 /* -------Container uno--------- */
 .container-uno {
     /* width: 100vw; */
-    height: 100vh;
+    min-height: 100vh;
     /* padding: 0px 14px; */
     background: url("../img/ffo.jpg");
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@ aside::selection {
 
 header {
     font-size: 190%;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,11 +91,15 @@ header {
 
 
 .container-dos {
-    height: 200vh;
+    min-height: 100vh;
     background-color: black;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
 }
 
     h2 {
+        align-self: center;
         position: absolute;
         color: white;
         margin: auto;
@@ -116,19 +120,23 @@ header {
         background-color: transparent;
     }
     .projects {
-        position: relative;
-        height: 200vh;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        background-color: black;
+        /* position: relative; */
+        min-height: 100vh;
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr); */
         /* grid-template-rows: repeat(1, 1fr); */
         /* align-items: center; */
         /* justify-content: center; */
         /* place-content: center; */
-        place-items: center;
+        /* place-items: center; */
         /* align-content: center; */
-        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
     }
-        .project-one {
+        /* .project-one {
             grid-column: 1 /span 1;
             grid-row: 1 / span 1;
         }
@@ -141,11 +149,12 @@ header {
         .project-three {
             grid-column: 1 / span 1;
             grid-row: 3 /span 1;
-        }
+        } */
 
         .projectu {
             /* position: relative; */
             z-index: 2;
+            margin: 30px;
             width: 200px;
             height: 180px;
             background-color: rgb(255, 233, 155);
@@ -167,7 +176,7 @@ header {
             }
 
 .container-tres {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +227,7 @@ header {
         width: 40px;
     } */
 
-    header {
+    /* header {
         font-size: 56px;
         height: 100%;
         display: flex;
@@ -226,15 +235,15 @@ header {
         justify-content: center;
         align-items: center;
         margin-top: -56px;
-        /* word-spacing: 9ch; */   
-    }
+        word-spacing: 9ch;  
+    } */
 
     .container-dos {
     height: 200vh;
     background-color: black;
 }
 
-    h2 {
+    /* h2 {
         position: absolute;
         color: white;
         margin: auto;
@@ -249,110 +258,7 @@ header {
         opacity: 1;
         z-index: 3;
         font-size: 80px;
-    }
-    .projects {
-        position: relative;
-        height: 200vh;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* grid-template-rows: repeat(1, 1fr); */
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* place-content: center; */
-        place-items: center;
-        /* align-content: center; */
-        
-    }
-        .project-one {
-            grid-column: 1 /span 1;
-            grid-row: 1 / span 1;
-        }
-
-        .project-two {
-            grid-column: 1 / span 1;
-            grid-row: 2 / span 1;
-        }
-
-        .project-three {
-            grid-column: 1 / span 1;
-            grid-row: 3 /span 1;
-        }
-
-        .projectu {
-            /* position: relative; */
-            z-index: 2;
-            width: 200px;
-            height: 180px;
-            background-color: rgb(255, 233, 155);
-            border-radius: 20px;
-            overflow: hidden;
-            text-align: center;
-            box-shadow: 0 0 80px 0px white;
-            
-        }
-        .container-dos {
-            height: 100vh;
-            background-color: black;
-        }
-        
-            h2 {
-                position: absolute;
-                color: white;
-                margin: auto;
-                font-size: 170px;
-                opacity: .09;
-                z-index: 1;
-                /* transition-property: opacity, z-index, font-size;
-                transition-delay: 200ms, 0ms, 0ms;
-                transition-duration: 300ms, 200ms, 860ms ; */
-            }
-            h2:hover {
-                opacity: 1;
-                z-index: 3;
-                font-size: 180px;
-            }
-            .projects {
-                position: relative;
-                height: 100vh;
-                padding: 8px;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                /* grid-template-rows: repeat(1, 1fr); */
-                /* align-items: center; */
-                /* justify-content: center; */
-                /* place-content: center; */
-                place-items: center;
-                /* align-content: center; */
-                
-            }
-                .project-one {
-                    grid-column: 1 /span 1;
-                    grid-row: 1 / span 1;
-                }
-        
-                .project-two {
-                    grid-column: 2 / span 1;
-                    grid-row: 1 / span 1;
-                }
-        
-                .project-three {
-                    grid-column: 1 / span 2;
-                    grid-row: 2 /span 1;
-                }
-        
-                .projectu {
-                    /* position: relative; */
-                    z-index: 2;
-                    width: 200px;
-                    height: 180px;
-                    background-color: rgb(255, 233, 155);
-                    border-radius: 20px;
-                    overflow: hidden;
-                    text-align: center;
-                    box-shadow: 0 0 80px 0px white;
-                    
-                }
-
+    } */
         .container-tres {
             font-size: 250%;
         }
